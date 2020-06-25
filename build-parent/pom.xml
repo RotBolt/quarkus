@@ -97,6 +97,7 @@
         <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
         <protoc.version>3.11.4</protoc.version>
         <grpc.version>1.29.0</grpc.version>
+        <boringssl.version>2.0.30.Final</boringssl.version>
         <maven-dependency-plugin.version>3.1.2</maven-dependency-plugin.version>
     </properties>
 
@@ -207,6 +208,12 @@
                         <artifactId>jsr305</artifactId>
                    </exclusion>
                 </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-tcnative-boringssl-static</artifactId>
+                <version>${boringssl.version}</version>
             </dependency>
 
         </dependencies>

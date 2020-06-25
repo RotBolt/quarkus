@@ -42,12 +42,6 @@
                 <type>test-jar</type>
             </dependency>
 
-            <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-tcnative-boringssl-static</artifactId>
-                <scope>test</scope>
-                <version>2.0.30.Final</version>
-            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
